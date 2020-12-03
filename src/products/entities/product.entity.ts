@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
+import { Component } from './component.entity'
 
 @Entity()
 export class Product {
@@ -13,4 +14,7 @@ export class Product {
 
   @Column({ default: true })
   isActive: boolean
+
+  @OneToMany(() => Component, (component) => component.product)
+  components: Component[]
 }
