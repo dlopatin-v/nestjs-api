@@ -32,6 +32,8 @@
     "@nestjs/swagger": "^4.7.5",
     "@nestjs/typeorm": "^7.1.5",
     "bcrypt": "^5.0.0",
+    "detect-ts-node": "^1.0.5",
+    "jwks-rsa": "^1.12.1",
     "lodash": "^4.17.20",
     "mongoose": "^5.11.5",
     "mysql": "^2.18.1",
