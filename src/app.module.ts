@@ -4,7 +4,6 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 import { configModule } from 'configure.root'
 import { ProductsModule } from './products/products.module'
 import { AuthModule } from './auth/auth.module'
-import { UsersModule } from './users/users.module'
 import { AppController } from './app.controller'
 
 @Module({
@@ -17,8 +16,7 @@ import { AppController } from './app.controller'
       useCreateIndex: true
     }),
     ProductsModule,
-    AuthModule,
-    UsersModule
+    AuthModule
   ],
   controllers: [AppController]
 })
